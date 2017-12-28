@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from Api import Poll, Talk, channel
+from Api import Poll, Talk#, channel
 from lib.curve.ttypes import *
 import requests
 import shutil
@@ -16,7 +16,7 @@ class LINE:
   mid = None
   authToken = None
   cert = None
-  channel_access_token = None
+ # channel_access_token = None
   token = None
   obs_token = None
   refresh_token = None
@@ -44,24 +44,25 @@ class LINE:
     self.cert = self.Talk.cert
 
     self.Poll = Poll(self.authToken)
-    self.channel = channel.Channel(self.authToken)
-    self.channel.login()
+#    self.channel = channel.Channel(self.authToken)
+ #   self.channel.login()
 
-    self.mid = self.channel.mid
-    self.channel_access_token = self.channel.channel_access_token
-    self.token = self.channel.token
-    self.obs_token = self.channel.obs_token
-    self.refresh_token = self.channel.refresh_token
-#    self._headers = {
-#           'X-Line-Application' : 'IOSIPAD\t7.14.0\tiPhone OS\t10.12.0',
-#           'X-Line-Access' : self.authToken,
-#           'User-Agent' : 'Line/7.14.0'
-#    }
+#    self.mid = self.channel.mid
+ #   self.channel_access_token = self.channel.channel_access_token
+  #  self.token = self.channel.token
+   # self.obs_token = self.channel.obs_token
+    #self.refresh_token = self.channel.refresh_token
     self._headers = {
-              'X-Line-Application': 'IOSIPAD\x097.14.0\x09iPhone_OS\x0910.12.0',
+              'X-Line-Application': 'CHROMEOS\t1.4.17\tChrome_OS\t1',
               'X-Line-Access': self.authToken,
-              'User-Agent': 'Line/7.14.0'
+              'User-Agent': 'Mozilla/5.0'
                }
+
+#    self._headers = {
+ #             'X-Line-Application': 'IOSIPAD\x097.14.0\x09iPhone_OS\x0910.12.0',
+  #            'X-Line-Access': self.authToken,
+   #           'User-Agent': 'Line/7.14.0'
+    #           }
 
 
   """User"""

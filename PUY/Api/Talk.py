@@ -23,7 +23,7 @@ class Talk:
 #  UA = "Line/7.4.7 iPad3,6 7.0.2"
  # LA = "IOSIPAD\t7.4.7\tiPhone OS\t7.0.2"
 
-  UA = "Mozilla/5.0"
+  UA = "Line/1.4.17"
   LA = "CHROMEOS\t1.4.17\tChrome_OS\t1"
 
   authToken = None

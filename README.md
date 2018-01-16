@@ -1,10 +1,10 @@
-# PUY BOT
+# SB MPUY
 #Install C9 or CA
 
 - sudo apt-get update
 - sudo apt-get install git
 - sudo apt-get install python-software-properties
-- git clone http://gitlab.com/arisjabrix/mpuy
+- git clone https://github.com/faathirr/mpuy2
 - sudo pip install rsa
 - sudo pip install thrift==0.9.3
 - sudo pip install requests
@@ -15,11 +15,3 @@
 - (masukin token kamu dulu,cara nya dapetin token...tanya para mastah)
 - cd mpuy
 - python puyself.py
-
-- klo work "Congratulation...!!!"
-- 
-# OPEN GLOBAL GIT 24 JAM
-- selebih ny privat
-
-
-
